@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Todo App</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="container">
+    <h1>Todo App</h1>
 
-  <div class="app">
-    <h2>Todo App</h2>
-
-    <form id="taskForm">
-      <input
-        type="text"
-        id="taskInput"
-        placeholder="Enter task"
-        required
-      />
-      <button type="submit">Add</button>
-    </form>
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Enter a task" />
+      <button id="addBtn">Add</button>
+    </div>
 
     <ul id="taskList"></ul>
+
+    <button id="clearBtn" class="clear-btn">Clear Completed</button>
   </div>
 
   <script src="script.js"></script>
